@@ -30,6 +30,7 @@
 
 package com.synconset;
 
+import com.synconset.FakeR;
 import android.app.AlertDialog;
 import android.app.LoaderManager;
 import android.app.ProgressDialog;
