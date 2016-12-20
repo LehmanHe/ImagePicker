@@ -8,4 +8,6 @@
     <string name="multi_image_picker_processing_images_message">This may take a moment</string>
     <string name="discard" translatable="false">Cancel</string>
     <string name="done" translatable="false">OK</string>
+    <string name="count_label">0</string>
+    <string name="total">Total: </string>
  </resources>

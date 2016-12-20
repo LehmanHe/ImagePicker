@@ -16,23 +16,19 @@
 
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/actionbar_discard"
-    android:layout_width="0dp"
-    android:layout_height="fill_parent"
+    android:layout_height="match_parent"
     android:layout_weight="1"
-    style="?android:actionButtonStyle">
-
-    <TextView android:id="@+id/actionbar_discard_textview"
-        android:text="@string/discard"
-        android:drawableLeft="@drawable/ic_action_discard_light"
-        android:drawableStart="@drawable/ic_action_discard_light"
+    android:layout_width="0dp"
+    style="?android:actionButtonStyle" >
+    <TextView
         android:drawablePadding="8dp"
         android:gravity="center_vertical"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/actionbar_discard_textview"
         android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingRight="20dp"
+        android:text="@string/discard"
+        android:textColor="#232427"
         style="?android:actionBarTabTextStyle" />
 </FrameLayout>

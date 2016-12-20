@@ -16,12 +16,41 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="50dp"
     android:orientation="horizontal"
     android:divider="?android:attr/dividerVertical"
     android:showDividers="middle"
-    android:dividerPadding="12dp">
+    android:background="#FFFFFF"
+    android:dividerPadding="0dp">
 
     <include layout="@layout/actionbar_discard_button" />
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="?android:actionButtonStyle"
+        android:id="@+id/actionbar_count"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="20dp"
+            android:orientation="horizontal">
+        <TextView style="?android:actionBarTabTextStyle"
+
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffc81f"
+            android:text="@string/total"/>
+        <TextView style="?android:actionBarTabTextStyle"
+            android:id="@+id/actionbar_count_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#ffc81f"
+            android:text="@string/count_label" />
+        </LinearLayout>
+    </FrameLayout>
     <include layout="@layout/actionbar_done_button" />
 </LinearLayout>

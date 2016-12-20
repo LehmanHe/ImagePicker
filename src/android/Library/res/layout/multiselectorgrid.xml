@@ -10,14 +10,14 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:columnWidth="0dip"
-        android:fadingEdgeLength="10dip"
+        android:fadingEdgeLength="0dip"
         android:fastScrollEnabled="true"
         android:gravity="center"
-        android:horizontalSpacing="8dip"
-        android:numColumns="3"
+        android:horizontalSpacing="4dip"
+        android:numColumns="4"
         android:requiresFadingEdge="vertical"
         android:scrollingCache="true"
         android:stretchMode="columnWidth"
-        android:verticalSpacing="8dip" />
-
+        android:verticalSpacing="4dip" />
+    <include layout="@layout/actionbar_custom_view_done_discard"/>
 </LinearLayout>
