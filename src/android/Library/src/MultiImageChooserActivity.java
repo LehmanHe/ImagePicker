@@ -237,7 +237,7 @@ public class MultiImageChooserActivity extends AppCompatActivity implements OnIt
 //                imageView1.setLayoutParams(new FrameLayout.LayoutParams(50,50));
 //                frameLayout.addView(imageView1);
 //                view.set
-                view.setBackgroundResource(R.drawable.check_tick);
+                view.setBackgroundResource(fakeR.getId("drawable","check_tick"));
 
             }
         } else {
@@ -441,7 +441,7 @@ public class MultiImageChooserActivity extends AppCompatActivity implements OnIt
                 } else {
                     imageView.setAlpha(128);
                 }
-                imageView.setBackgroundColor(selectedColor);
+                imageView.setBackgroundResource(fakeR.getId("drawable","check_tick"));
             } else {
                 if (android.os.Build.VERSION.SDK_INT>=16) {
                     imageView.setImageAlpha(255);
