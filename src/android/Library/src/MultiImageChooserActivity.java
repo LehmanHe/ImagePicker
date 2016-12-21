@@ -74,6 +74,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.Locale;
 
 public class MultiImageChooserActivity extends AppCompatActivity implements OnItemClickListener,
         LoaderManager.LoaderCallbacks<Cursor> {
@@ -176,8 +177,13 @@ public class MultiImageChooserActivity extends AppCompatActivity implements OnIt
         initActionBar();
         updateAcceptButton();
         progress = new ProgressDialog(this);
-        progress.setTitle("Processing Images");
-        progress.setMessage("This may take a few moments");
+        if (Locale.getDefault().getLanguage()=="en") {
+            progress.setTitle("Processing Images");
+            progress.setMessage("This may take a few moments");
+        }else{
+            progress.setTitle("加载图片");
+            progress.setMessage("客官请稍等...");
+        }
     }
 
     private void initActionBar() {
