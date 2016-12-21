@@ -321,8 +321,7 @@ public class MultiImageChooserActivity extends AppCompatActivity implements OnIt
     }
 
     public void selectClicked(View ignored) {
-        ((TextView) getSupportActionBar().getCustomView().findViewById(fakeR.getId("id", "actionbar_done_textview"))).setEnabled(false);
-        getSupportActionBar().getCustomView().findViewById(fakeR.getId("id", "actionbar_done")).setEnabled(false);
+        buttonOk.setEnabled(false);
         progress.show();
         Intent data = new Intent();
         if (fileNames.isEmpty()) {
